@@ -9,7 +9,7 @@
 @section('content')
 
     {{-- ===================== HERO ===================== --}}
-    <section class="bfc-hero">
+    <section class="bfc-hero pt-5 pb-4 position-relative" style="background: radial-gradient(483.9% 2719.65% at -49.5% -250%, rgba(218, 255, 222, 0) 29.24%, rgba(174, 211, 255, 0) 47.38%, rgba(201, 212, 239, 0) 54.97%, rgba(215, 152, 225, 0) 65.75%, rgba(202, 207, 250, 0) 81.77%) ;">
         <span class="bfc-blob bfc-blob-purple" style="top:-30px; right:10%;"></span>
         <div class="container-xxl px-md-4 px-xl-5 text-center position-relative">
             <div class="bfc-toggle mb-4" role="tablist" aria-label="Booking type">

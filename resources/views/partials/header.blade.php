@@ -50,4 +50,5 @@
             </div>
         </div>
     </nav>
+    <!-- <img class="right-shadow-set2026" src="{{ asset('images/header-right-shadow.svg') }}" alt="Podcast studio with two chairs, microphones, a table and a brick-wall backdrop" class="bfc-hero-bg1212" aria-hidden="true"> -->
 </header>

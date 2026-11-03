@@ -19,64 +19,64 @@ class PageController extends Controller
     {
         return [
             [
-                'name'  => 'Stage & Setup View',
+                'name' => 'Stage & Setup View',
                 'image' => 'images/one-studio/stage-setup.webp',
-                'desc'  => 'A glimpse of the full setup with lights, cameras, and more, highlighting the production environment.',
+                'desc' => 'A glimpse of the full setup with lights, cameras, and more, highlighting the production environment.',
             ],
             [
-                'name'  => 'Yellow Sofa & Panel Wall',
+                'name' => 'Yellow Sofa & Panel Wall',
                 'image' => 'images/one-studio/yellow-sofa.webp',
-                'desc'  => 'A vibrant and youthful lounge suited for lively debates, creative brainstorming, or expressive storytelling.',
+                'desc' => 'A vibrant and youthful lounge suited for lively debates, creative brainstorming, or expressive storytelling.',
             ],
             [
-                'name'  => 'Green Screen (Chroma)',
+                'name' => 'Green Screen (Chroma)',
                 'image' => 'images/one-studio/green-screen-chroma.webp',
-                'desc'  => 'A flexible green-screen chroma setup for virtual backgrounds and any look your content needs.',
+                'desc' => 'A flexible green-screen chroma setup for virtual backgrounds and any look your content needs.',
             ],
             [
-                'name'  => 'Interactive Screen',
+                'name' => 'Interactive Screen',
                 'image' => 'images/one-studio/interactive-screen.webp',
-                'desc'  => 'A focused display area for webinars, live streams, or presentations that call for dynamic visuals and real-time engagement.',
+                'desc' => 'A focused display area for webinars, live streams, or presentations that call for dynamic visuals and real-time engagement.',
             ],
             [
-                'name'  => 'Brick Wall & Wooden Chairs',
+                'name' => 'Brick Wall & Wooden Chairs',
                 'image' => 'images/one-studio/brick-wall-wooden-chairs.webp',
-                'desc'  => 'A casual, cafe-style setup with warm tones, perfect for candid conversations, interviews, or lighthearted discussions.',
+                'desc' => 'A casual, cafe-style setup with warm tones, perfect for candid conversations, interviews, or lighthearted discussions.',
             ],
             [
-                'name'  => 'Wicker Chairs & Wooden Partition',
+                'name' => 'Wicker Chairs & Wooden Partition',
                 'image' => 'images/one-studio/wicker-chairs-wooden-partition.webp',
-                'desc'  => 'An earthy, intimate nook with woven seating and dark carved panels, ideal for deep reflections, cultural talks, or meaningful exchanges.',
+                'desc' => 'An earthy, intimate nook with woven seating and dark carved panels, ideal for deep reflections, cultural talks, or meaningful exchanges.',
             ],
             [
-                'name'  => 'Art Wall & Wicker Chairs',
+                'name' => 'Art Wall & Wicker Chairs',
                 'image' => 'images/one-studio/art-wall-wicker-chairs.webp',
-                'desc'  => 'A vibrant backdrop of books and art with cozy wicker seating, ideal for creative chats or book discussions.',
+                'desc' => 'A vibrant backdrop of books and art with cozy wicker seating, ideal for creative chats or book discussions.',
             ],
             [
-                'name'  => 'Bamboo Weave & Cane Chairs',
+                'name' => 'Bamboo Weave & Cane Chairs',
                 'image' => 'images/one-studio/bamboo-weave-cane-chairs.webp',
-                'desc'  => 'A rustic, natural backdrop with woven textures, great for nostalgic conversations, folk stories, or culture-inspired chats.',
+                'desc' => 'A rustic, natural backdrop with woven textures, great for nostalgic conversations, folk stories, or culture-inspired chats.',
             ],
             [
-                'name'  => 'Stage & Interactive Screen',
+                'name' => 'Stage & Interactive Screen',
                 'image' => 'images/one-studio/stage-interactive-screen.webp',
-                'desc'  => 'A focused display area for webinars, live streams, or presentations that call for dynamic visuals and real-time engagement.',
+                'desc' => 'A focused display area for webinars, live streams, or presentations that call for dynamic visuals and real-time engagement.',
             ],
             [
-                'name'  => 'Velvet Curtains & Modern Chairs',
+                'name' => 'Velvet Curtains & Modern Chairs',
                 'image' => 'images/one-studio/velvet-curtains-modern-chairs.webp',
-                'desc'  => 'A minimalist setup with rich red drapes and modern chairs, great for crisp interviews, thought-provoking debates, or casual coffee talks.',
+                'desc' => 'A minimalist setup with rich red drapes and modern chairs, great for crisp interviews, thought-provoking debates, or casual coffee talks.',
             ],
             [
-                'name'  => 'Wood & Carved Panel Set',
+                'name' => 'Wood & Carved Panel Set',
                 'image' => 'images/one-studio/wood-carved-panel-set.webp',
-                'desc'  => 'A warm, earthy corner with carved wooden panels and soft lighting, perfect for intimate one-on-one conversations or reflective storytelling sessions.',
+                'desc' => 'A warm, earthy corner with carved wooden panels and soft lighting, perfect for intimate one-on-one conversations or reflective storytelling sessions.',
             ],
             [
-                'name'  => 'Green Room',
+                'name' => 'Green Room',
                 'image' => 'images/one-studio/green-room.webp',
-                'desc'  => 'A relaxed backstage space designed for touch-ups and last-minute prep before the cameras roll.',
+                'desc' => 'A relaxed backstage space designed for touch-ups and last-minute prep before the cameras roll.',
             ],
         ];
     }
@@ -88,20 +88,20 @@ class PageController extends Controller
     {
         return [
             [
-                'name'     => 'Package 1',
-                'price'    => '4,000',
+                'name' => 'Package 1',
+                'price' => '4,000',
                 'featured' => false,
                 'features' => ['1 Mic', '1 Camera', '2 Lights', 'Location Rental'],
             ],
             [
-                'name'     => 'Package 2',
-                'price'    => '6,000',
+                'name' => 'Package 2',
+                'price' => '6,000',
                 'featured' => true,
                 'features' => ['2 Mic', '2 Camera', '2 Lights', 'Location Rental'],
             ],
             [
-                'name'     => 'Package 3',
-                'price'    => '7,500',
+                'name' => 'Package 3',
+                'price' => '7,500',
                 'featured' => false,
                 'features' => ['2 Mic', '3 Camera', '2 Lights', 'Location Rental'],
             ],
@@ -111,23 +111,23 @@ class PageController extends Controller
     public function home()
     {
         $stats = [
-            ['value' => '4K',   'label' => 'Professional Cameras'],
-            ['value' => '4.5',  'label' => 'Rated By Visits'],
-            ['value' => '3+',   'label' => 'Years of Experience'],
+            ['value' => '4K', 'label' => 'Professional Cameras'],
+            ['value' => '4.5', 'label' => 'Rated By Visits'],
+            ['value' => '3+', 'label' => 'Years of Experience'],
             ['value' => '500+', 'label' => 'Professional Shoots'],
         ];
 
         $facilities = [
-            ['title' => 'Professional Camera Setup',    'desc' => '3 full-frame professional cameras for a cinematic, high-quality production.'],
-            ['title' => 'Acoustic Setup',               'desc' => 'A dedicated acoustic setup for clearer sound, better audio quality, and reduced outside noise.'],
-            ['title' => 'On-Site Production Support',    'desc' => 'A cameraperson and production assistance to help keep your shoot running smoothly.'],
-            ['title' => 'Green Room',                    'desc' => 'A dedicated space to relax and prepare before you go on camera.'],
-            ['title' => 'Professional Audio Equipment',  'desc' => 'Choose from 2 Shure Dynamic Podcast Microphones, DJI Mic 3—the latest wireless microphone system—and Dijitek wireless microphones.'],
-            ['title' => 'Post-Production Support',       'desc' => 'Need help after the shoot? Professional video editing services are available at an additional cost.'],
-            ['title' => 'Blackout Setup',               'desc' => 'Full control over natural light, giving you complete flexibility with studio lighting.'],
+            ['title' => 'Professional Camera Setup', 'desc' => '3 full-frame professional cameras for a cinematic, high-quality production.'],
+            ['title' => 'On-Site Production Support', 'desc' => 'A cameraperson and production assistance to help keep your shoot running smoothly.'],
+            ['title' => 'Professional Audio Equipment', 'desc' => 'Choose from 2 Shure Dynamic Podcast Microphones, DJI Mic 3—the latest wireless microphone system—and Dijitek wireless microphones.'],
+            ['title' => 'Blackout Setup', 'desc' => 'Full control over natural light, giving you complete flexibility with studio lighting.'],
+            ['title' => 'Professional Lighting Setup', 'desc' => 'A complete lighting setup including 2 Godox lights, 2 soft lights, and 2 C-stand lights to create the right look for your shoot.'],
+            ['title' => 'Acoustic Setup', 'desc' => 'A dedicated acoustic setup for clearer sound, better audio quality, and reduced outside noise.'],
+            ['title' => 'Green Room', 'desc' => 'A dedicated space to relax and prepare before you go on camera.'],
+            ['title' => 'Post-Production Support', 'desc' => 'Need help after the shoot? Professional video editing services are available at an additional cost.'],
             ['title' => 'Same-Day Raw Footage Transfer', 'desc' => 'Raw footage can be collected on the same day. Kindly bring your own hard drive for the transfer.'],
-            ['title' => 'Professional Lighting Setup',   'desc' => 'A complete lighting setup including 2 Godox lights, 2 soft lights, and 2 C-stand lights to create the right look for your shoot.'],
-            ['title' => 'Other Facilities',             'desc' => 'From a fully air-conditioned space and Wi-Fi access to drinking water, clean washrooms, a lift for elderly guests, and convenient parking, the studio is equipped with everything you need for a comfortable and hassle-free experience.'],
+             ['title' => 'Other Facilities', 'desc' => 'From a fully air-conditioned space and Wi-Fi access to drinking water, clean washrooms, a lift for elderly guests, and convenient parking, the studio is equipped with everything you need for a comfortable and hassle-free experience.'],
         ];
 
         $testimonials = [
@@ -173,21 +173,21 @@ class PageController extends Controller
         ];
 
         return view('home', [
-            'sets'         => $this->studioSets(),
-            'packages'     => $this->packages(),
-            'stats'        => $stats,
-            'facilities'   => $facilities,
+            'sets' => $this->studioSets(),
+            'packages' => $this->packages(),
+            'stats' => $stats,
+            'facilities' => $facilities,
             'testimonials' => $testimonials,
-            'homeFaqs'     => $homeFaqs,
+            'homeFaqs' => $homeFaqs,
         ]);
     }
 
     public function bookStudio()
     {
         return view('book-studio', [
-            'sets'     => $this->studioSets(),
+            'sets' => $this->studioSets(),
             'packages' => $this->packages(),
-            'terms'    => [
+            'terms' => [
                 "You can book a slot by filling out the form on BFC Studio's website and sharing your preferred date, time, and requirements. Once you submit your booking details, our team will get in touch with you to confirm your booking and discuss the next steps.",
                 'A booking may be cancelled within 7 days of making the booking or up to 7 days before the scheduled shoot date, whichever is earlier.',
                 'In case of cancellation within the applicable period, the amount already paid will be refunded to the original mode of payment.',

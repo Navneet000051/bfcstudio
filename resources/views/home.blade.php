@@ -18,10 +18,13 @@
         ['img' => 'images/banner/banner3.webp',    'alt' => 'Wicker chairs framed by a wooden partition and art wall'],
     ];
 @endphp
-
-<section class="container-fluid bfc-hero position-relative" style="background: radial-gradient(483.9% 2719.65% at -49.5% -250%, rgba(218, 255, 222, 0) 29.24%, rgba(174, 211, 255, 0) 47.38%, rgba(201, 212, 239, 0) 54.97%, rgba(215, 152, 225, 0) 65.75%, rgba(202, 207, 250, 0) 81.77%) ;">
-    <span class="bfc-blob bfc-blob-purple" style="top: 13%;left: 0px;"></span>
+<style>
+    .right-shadow-set2026 {opacity: 0;}
+</style>
+<section class="container-fluid ps-lg-4 bfc-hero position-relative" style="background: radial-gradient(483.9% 2719.65% at -49.5% -250%, rgba(218, 255, 222, 0) 29.24%, rgba(174, 211, 255, 0) 47.38%, rgba(201, 212, 239, 0) 54.97%, rgba(215, 152, 225, 0) 65.75%, rgba(202, 207, 250, 0) 81.77%) ;">
+    <!-- <span class="bfc-blob bfc-blob-purple" style="top: 13%;left: 0px;"></span> -->
     <div class="row">
+        <img src="{{ asset('images/hero-banner-shadow.svg') }}" alt="Podcast studio with two chairs, microphones, a table and a brick-wall backdrop" class="bfc-hero-bg1212" aria-hidden="true">
         <div class="col-lg-6 order-lg-1 order-2">
             <div class="container-xxl px-md-4 px-xl-5 bfc-hero-inner">
                 <div class="bfc-hero-content">
@@ -69,7 +72,7 @@
 
 {{-- ===================== STATS ===================== --}}
 <section class="bfc-stats py-lg-5 py-md-4 py-3 shadow-set-ststar">
-    <div class="container-xxl px-md-4 px-xl-5">
+    <div class="container px-lg-5 px-md-4 px-2">
         <div class="row g-3 g-lg-4 bfc-stats-row">
             @php
                 $statIcons = ['camera-icon.svg', 'retad-icon.svg', 'years-icon.svg', 'shoots-icon.svg'];
@@ -140,7 +143,7 @@
 
 {{-- ===================== STUDIO FACILITIES ===================== --}}
 <section class="bfc-section bfc-facilities pb-0" id="services">
-    <div class="container-xxl px-md-4 px-xl-5">
+    <div class="container-xxl">
         <div class="text-center mb-5">
             <h2 class="bfc-heading">Studio Facilities &amp; <span class="accent">Production Services</span></h2>
             <p class="bfc-lead">From professional equipment to on-site support, BFC Studio is equipped with everything you need for a smooth and seamless production experience.</p>
@@ -176,11 +179,13 @@
                     <div class="bfc-facility mb-3">
                         <span class="bfc-facility-icon" aria-hidden="true">
                             <img src="{{ asset('images/studio-icons/' . ($facilityIcons[$f['title']] ?? 'other-icon.svg')) }}" alt="">
-                    </span>
+                        </span>
                         <div>
                             <h3 class="bfc-facility-title">{{ $f['title'] }}</h3>
                             <p class="bfc-facility-desc">{{ $f['desc'] }}</p>
                         </div>
+
+                        <span class="hidden_number_set">  {{ sprintf('%02d', $loop->iteration) }}</span>
                     </div>
                 @endforeach
             </div>
@@ -197,6 +202,7 @@
                             <h3 class="bfc-facility-title">{{ $f['title'] }}</h3>
                             <p class="bfc-facility-desc">{{ $f['desc'] }}</p>
                         </div>
+                         <span class="hidden_number_set">  {{ sprintf('%02d', $loop->iteration + 5) }}</span>
                     </div>
                 @endforeach
             </div>
@@ -255,7 +261,7 @@
 
 {{-- ===================== FAQ PREVIEW ===================== --}}
 <section class="bfc-faq-section" id="faq" aria-labelledby="bfc-faq-title">
-    <div class="container-xxl px-md-4 px-xl-5 bfc-faq-container">
+    <div class="container-xxl bfc-faq-container">
         <h2 class="bfc-faq-heading" id="bfc-faq-title">Frequently Asked <span>Questions</span></h2>
 
         <div class="bfc-faq-card">
@@ -289,6 +295,8 @@
                 <img class="bfc-faq-image" src="{{ asset('images/faq.webp') }}" alt="A tablet displaying an FAQ message on a desk" loading="lazy">
             </div>
         </div>
+
+         <img class="left-right-icon" src="{{ asset('images/left-right-icon.svg') }}" alt="left-right-icon">
     </div>
 </section>
 
