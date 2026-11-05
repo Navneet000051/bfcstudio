@@ -226,7 +226,7 @@
                 <hr>
             </div>
             {{-- ===================== TERMS & CONDITIONS ===================== --}}
-            <div class="text-center my-5">
+            <div class="text-center my-5" id="TermsConditions">
                 <h2 class="bfc-heading">Terms &amp; <span class="accent">Conditions</span></h2>
             </div>
             <ol class="bfc-terms mb-4">

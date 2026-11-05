@@ -230,7 +230,7 @@ class PageController extends Controller
                 'Once the booking has been postponed and a new date and time have been confirmed, no further postponement will be permitted.',
 
                 'Raw footage can be transferred on the same day after the shoot. Please bring your own hard drive for the transfer.',
-                
+
                 'Guests are requested to arrive half an hour before the scheduled recording time to allow sufficient time for preparation and to ensure that the shoot begins as scheduled.',
             ],
         ]);
@@ -397,5 +397,14 @@ class PageController extends Controller
     public function privacyPolicy()
     {
         return view('privacy-policy');
+    }
+
+    public function cancellationrefundpolicy()
+    {
+        return view('cancellation-refund-policy');
+    }
+    public function termsandconditions()
+    {
+        return view('terms-and-conditions');
     }
 }

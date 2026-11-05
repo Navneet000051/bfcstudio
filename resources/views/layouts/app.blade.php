@@ -73,7 +73,7 @@
 
                     <div class="bfc-nav-actions">
                         <a href="tel:+917348700888" class="btn bfc-btn-outline header-icon-btn-shadow17">
-                            <i class="bi bi-telephone"></i> Contact Us
+                            <i class="bi bi-telephone"></i> +91 7348700888
                         </a>
                         <a href="{{ route('book-studio') }}" class="btn bfc-btn-primary shadow-0">
                             <i class="bi bi-calendar-check"></i> Check Availability
@@ -119,17 +119,20 @@
                         <div class="col-lg-2 col-md-6 col-6">
                             <h3 class="bfc-footer-heading">Quick Links</h3>
                             <ul class="bfc-footer-links">
-                                <li><a href="{{ route('home') }}#our-studio">About us</a></li>
-                                <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
-                                <li><a href="{{ route('home') }}">Site Map</a></li>
+                                <!-- <li><a href="#">About us</a></li> -->
+                                <li><a href="https://basicfundeclear.com/show" target="_blank">Shows</a></li>
+                                <li><a href="{{ route('faq') }}">FAQs</a></li>
+                                <li><a href="{{ route('home') }}#packages">Packages</a></li>
                             </ul>
                         </div>
 
                         <div class="col-lg-3 col-md-6 col-6">
-                            <h3 class="bfc-footer-heading">Links Heading</h3>
+                            <h3 class="bfc-footer-heading">Policies</h3>
                             <ul class="bfc-footer-links">
-                                <li><a href="{{ route('home') }}#our-studio">Shows</a></li>
-                                <li><a href="{{ route('faq') }}">Terms &amp; Conditions</a></li>
+                                <li><a href="{{ route('terms-and-conditions') }}">Terms & Conditions</a></li>
+                                <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
+                                <li><a href="{{ route('cancellation-refund-policy') }}">Cancellation & Refund Policy</a>
+                                </li>
                             </ul>
                         </div>
 
@@ -151,12 +154,15 @@
                         <p class="mb-0">Copyright &copy; {{ date('Y') }}. All Rights Reserved By <span>BFC Studio</span>
                         </p>
                         <div class="bfc-social">
-                            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
-                            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-                            <a href="#" aria-label="Behance"><i class="bi bi-behance"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61593612510752" aria-label="Facebook"
+                                target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/bfcstudio_/?hl=en" aria-label="Instagram"
+                                target="_blank"><i class="bi bi-instagram"></i></a>
+                            <!-- <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a> -->
+                            <a href="https://x.com/BasicFundeclear" aria-label="X" target="_blank"> <i
+                                    class="bi bi-twitter-x"></i></a>
+                            <a href="https://www.youtube.com/channel/UCggVVI7G6ADJTbZjf_W6aNA" aria-label="YouTube"
+                                target="_blank"><i class="bi bi-youtube"></i></a>
                         </div>
                     </div>
                 </div>

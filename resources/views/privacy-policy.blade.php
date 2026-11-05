@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-    <style>
+      <style>
         .privacy-policy-section {
             background: #f7f8fc;
             font-family: Arial, sans-serif;
@@ -31,7 +31,7 @@
 
         .privacy-subtitle {
             color: #647084;
-            font-size: 16px;
+            font-size: 15px;
             line-height: 1.8;
         }
 
@@ -51,7 +51,7 @@
 
         .privacy-sidebar h5 {
             color: #263192;
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 700;
             margin-bottom: 18px;
         }
@@ -93,8 +93,8 @@
 
         .privacy-block h2 {
             color: #263192;
-            font-size: 21px;
-            font-weight: 700;
+            font-size: 19px;
+            font-weight: 600;
             margin-bottom: 16px;
         }
 
@@ -123,7 +123,7 @@
 
         .privacy-contact-card h5 {
             color: #263192;
-            font-weight: 700;
+            font-weight: 600;
             margin-bottom: 15px;
         }
 
@@ -143,7 +143,7 @@
             }
 
             .privacy-block h2 {
-                font-size: 18px;
+                font-size: 16px;
             }
 
             .privacy-sidebar {
@@ -151,36 +151,80 @@
             }
         }
     </style>
-     <style>
+    <style>
         .bfc-footer {
             padding: 80px 0px 0px 0px;
         }
+
+        .bfc-privacy-policy li {
+            font-size: 16px;
+            padding-bottom: 8px;
+        }
     </style>
     <div class="container-fluid bfc-privacy-policy pt-5 ">
-         <span class="bfc-blob bfc-blob-purple" style="top: -38px; right: 8%;"></span>
+        <span class="bfc-blob bfc-blob-purple" style="top: -38px; right: 8%;"></span>
         <div class="container">
             <h1 class="bfc-privacy-policy-heading">Privacy Policy</h1>
-            <p class="bfc-privacy-policy-text">At BFC Studio, we value your privacy and are committed to protecting your
-                personal information. This Privacy Policy outlines how we collect, use, and safeguard the data you provide
-                when using our website and services.</p>
-            <h3 class="bfc-privacy-policy-subheading">Information We Collect</h3>
-            <p class="bfc-privacy-policy-text">We may collect personal information such as your name, email address, phone
-                number, and payment details when you book our studio or subscribe to our newsletter. Additionally, we may
-                collect non-personal information such as your IP address, browser type, and browsing behavior on our
-                website.</p>
-            <h3 class="bfc-privacy-policy-subheading">How We Use Your Information</h3>
-            <p class="bfc-privacy-policy-text">The information we collect is used to provide and improve our services,
-                process bookings, communicate with you regarding your reservations, and send promotional materials if you
-                have opted in. We do not sell or share your personal information with third parties for marketing purposes.
+            <p class="bfc-privacy-policy-text">
+                At BFC Studio, we value your privacy and are committed to protecting the personal information you share with
+                us while making a booking or using our services.
             </p>
-            <h3 class="bfc-privacy-policy-subheading">Data Security</h3>
-            <p class="bfc-privacy-policy-text">We implement appropriate security measures to protect your personal
-                information from unauthorized access, alteration, disclosure, or destruction. However, please note that no
-                method of transmission over the internet or electronic storage is 100% secure.</p>
-            <h3 class="bfc-privacy-policy-subheading">Your Rights</h3>
-            <p class="bfc-privacy-policy-text">You have the right to access, update, or delete your personal information. If
-                you wish to exercise any of these rights or have any questions regarding our Privacy Policy, please contact
-                us at <a href="mailto:enquiry@bfcstudio.com">enquiry@bfcstudio.com</a>.</p>
+            <h3 class="bfc-privacy-policy-subheading">Information We Collect</h3>
+            <p class="bfc-privacy-policy-text">We may collect basic personal information such as your name, contact number,
+                email address, booking details, payment information, and other details required to manage your studio
+                booking.
+            </p>
+            <h3 class="bfc-privacy-policy-subheading">How We Use Your Information
+            </h3>
+            <p class="bfc-privacy-policy-text">
+                The information collected may be used to:
+            </p>
+            <ul>
+                <li>Process and manage studio bookings.</li>
+                <li>Communicate booking confirmations, updates, and schedule-related information.
+                </li>
+                <li>Process payments, cancellations, and refunds.
+                </li>
+                <li>Provide customer support and improve our services.
+                </li>
+            </ul>
+            <h3 class="bfc-privacy-policy-subheading">Recording, Footage & Content Usage
+            </h3>
+            <p class="bfc-privacy-policy-text">
+                All raw footage and recorded content will be handed over to the client as per the agreed deliverables. Once
+                the content has been successfully handed over, BFC Studio will delete its copies and will not retain, use,
+                publish, distribute, or share the recordings without the client's prior consent.
+            </p>
+            <p class="bfc-privacy-policy-text">
+                If the client opts for additional services such as video editing or post-production, the relevant footage
+                may be retained and accessed for the purpose of delivering those services. Any use of the content for
+                promotional, marketing, or other purposes will require separate consent from the client.
+            </p>
+            <h3 class="bfc-privacy-policy-subheading">Data Protection</h3>
+
+            <p class="bfc-privacy-policy-text"> We are committed to protecting your personal information and handling it
+                responsibly in accordance with applicable data protection laws, including the Digital Personal Data
+                Protection Act, 2023 (DPDP Act). We take reasonable measures to safeguard your information against
+                unauthorised access, misuse, or disclosure. Your personal information is not sold or shared with third
+                parties for their independent marketing purposes.
+            </p>
+            <h3 class="bfc-privacy-policy-subheading">Third-Party Services</h3>
+
+            <p class="bfc-privacy-policy-text"> Certain services, such as payment processing, may involve third-party
+                platforms. Their handling of your information is governed by their respective privacy policies.
+
+            </p>
+
+
+
+            <h3 class="bfc-privacy-policy-subheading">Policy Updates</h3>
+            <p class="bfc-privacy-policy-text">
+                BFC Studio reserves the right to update this Privacy Policy from time to time. Any changes will be reflected
+                on this page.
+            </p>
+            <p class="bfc-privacy-policy-text">
+                For any privacy-related queries, please contact us through our official communication channels.
+            </p>
         </div>
     </div>
 @endsection
