@@ -58,12 +58,11 @@ a {
 .bfc-section {
     padding: 72px 0;
     position: relative;
-    background-color: #F8F8F8;
 }
 
 /* ---- Section headings ------------------------------------------------- */
 .bfc-heading {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--bfc-navy);
     font-size: clamp(1.9rem, 3.2vw, 2.45rem);
     line-height: 1.2;
@@ -75,7 +74,7 @@ a {
 }
 
 .bfc-subheading {
-    color: var(--bfc-ink);
+    color: #2F327D;
     font-weight: 500;
     font-size: clamp(1.1rem, 2vw, 2.4rem);
     /* margin-bottom: 10px; */
@@ -147,7 +146,7 @@ a {
 
 .bfc-btn-lg {
     padding: 14px 34px;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .bfc-btn-block {
@@ -182,11 +181,16 @@ a {
 }
 
 .bfc-navbar {
-    background: #ffffff;
+    /* background: #ffffff; */
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #F97316;
     padding: 5px 0;
     opacity: 0.98;
+}
+
+.header-icon-btn-shadow17 {
+    border: 1px solid #e9650d ;
+    color: #e9650d ;
 }
 
 /* .right-shadow-set2026{
@@ -205,7 +209,7 @@ a {
 .bfc-navbar .nav-link {
     color: var(--bfc-ink);
     font-weight: 500;
-    font-size: 0.92rem;
+    font-size: 0.95rem;
     padding: 8px 14px;
     border-radius: 999px;
     transition: color 0.15s ease;
@@ -272,9 +276,9 @@ a {
 
 .left-right-icon {
     position: absolute;
-    bottom: -20%;
+    bottom: -10%;
     left: 10px;
-    width: 8%;
+    width: 6%;
 }
 
 .bfc-hero-inner {
@@ -921,9 +925,10 @@ a {
 }
 
 .bfc-blob-purple {
-    background: #b79bff;
-    width: 200px;
-    height: 200px;
+    /* background: #b79bff; */
+    background: linear-gradient(180deg, #b79bff 0%, #8be78b 100%);
+    width: 300px;
+    height: 300px;
 }
 
 .bfc-blob-orange {
@@ -1173,7 +1178,7 @@ a {
 .bfc-accordion .accordion-button {
     font-weight: 500;
     color: var(--bfc-ink);
-    font-size: 0.95rem;
+    font-size: 1rem;
     padding: 18px 20px;
     background: #fff;
     box-shadow: none;
@@ -1182,11 +1187,21 @@ a {
 .bfc-accordion .accordion-button:not(.collapsed) {
     color: var(--bfc-navy);
     background: #fff;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .bfc-accordion .accordion-button:focus {
     box-shadow: none;
     border-color: transparent;
+}
+
+.border-bottom-thelastchild {
+    border-bottom: 1px solid #BABABA;
+}
+
+.border-bottom-thelastchild:last-child {
+    border-bottom: 1px solid transparent;
 }
 
 .bfc-accordion .accordion-button::after {
@@ -1215,7 +1230,7 @@ a {
    FAQ page
    ========================================================================== */
 .bfc-faq-page .bfc-faq-hero {
-    background: linear-gradient(120deg, #faf6ff 0%, #eef4ff 100%);
+    /* background: linear-gradient(120deg, #faf6ff 0%, #eef4ff 100%); */
     padding: 60px 0 40px;
     text-align: center;
 }
@@ -1223,10 +1238,9 @@ a {
 .bfc-faq-cat-title {
     font-weight: 600;
     color: var(--bfc-navy);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 36px 0 18px;
     padding-bottom: 12px;
-    border-bottom: 1px solid var(--bfc-line);
 }
 
 /* ==========================================================================
@@ -1234,9 +1248,9 @@ a {
    ========================================================================== */
 .bfc-book .bfc-toggle {
     display: inline-flex;
-    background: #fff;
+    background: #EBEBEB;
     border-radius: 999px;
-    padding: 5px;
+    padding: 8px 10px;
     box-shadow: var(--bfc-shadow-sm);
     gap: 4px;
 }
@@ -1245,7 +1259,7 @@ a {
     border: none;
     background: transparent;
     color: var(--bfc-muted);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 0.88rem;
     padding: 9px 22px;
     border-radius: 999px;
@@ -1254,8 +1268,9 @@ a {
 }
 
 .bfc-book .bfc-toggle-btn.active {
-    background: var(--bfc-ink);
-    color: #fff;
+    border: 1px solid #B2B2B2;
+    background: #FFFFFF;
+    color: #000000;
 }
 
 .bfc-card {
@@ -1263,39 +1278,44 @@ a {
     border-radius: var(--bfc-card-radius);
     box-shadow: var(--bfc-shadow);
     padding: 28px;
+    border: 1px solid #C4C4C4;
+    overflow: hidden;
 }
 
 .bfc-card-title {
-    font-weight: 600;
+    font-weight: 4 00;
     color: var(--bfc-ink);
-    font-size: 1.15rem;
-    margin-bottom: 18px;
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 
 .bfc-field-label {
-    font-size: 0.82rem;
-    color: var(--bfc-ink);
+    font-size: .90rem;
+    color: #454545;
     font-weight: 500;
-    margin-bottom: 6px;
+    /* margin-bottom: 10px; */
     display: flex;
     align-items: center;
     gap: 6px;
+    border: 1px solid #C4C4C4;
+    border-radius: 12px;
+    padding: 10px 14px;
 }
 
 .bfc-field-label i {
-    color: var(--bfc-orange);
+    color: #454545;
 }
 
 .bfc-input,
 .bfc-select,
 .bfc-textarea {
     width: 100%;
-    border: 1px solid var(--bfc-line);
+    border: 1px solid #C4C4C4;
     border-radius: 12px;
     padding: 12px 15px;
     font-size: 0.9rem;
     color: var(--bfc-ink);
-    background: #fcfbff;
+    /* background: #fcfbff; */
     transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
@@ -1308,7 +1328,7 @@ a {
 }
 
 .bfc-details-media img {
-    border-radius: 16px;
+    /* border-radius: 16px; */
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1321,7 +1341,7 @@ a {
     border-radius: 18px;
     box-shadow: var(--bfc-shadow-sm);
     padding: 18px;
-    max-width: 330px;
+    max-width: 430px;
 }
 
 .bfc-cal-head {
@@ -1405,12 +1425,13 @@ a {
 }
 
 .bfc-slot-list {
-    max-height: 300px;
+    max-height: 350px;
     overflow-y: auto;
     border: 1px solid var(--bfc-line);
     border-radius: 12px;
     padding: 6px;
     margin-top: 10px;
+    float: right;
 }
 
 .bfc-slot {
@@ -1437,7 +1458,7 @@ a {
 
 /* studio set picker */
 .bfc-set-preview {
-    width: 100%;
+    width: 80%;
     aspect-ratio: 16 / 7;
     object-fit: cover;
     border-radius: 18px;
@@ -1476,7 +1497,7 @@ a {
 
 /* booking summary */
 .bfc-summary {
-    border: 1px dashed #d9d5ef;
+    border: 3px dashed #827272;
     border-radius: 16px;
     padding: 22px 26px;
     background: #fdfcff;
@@ -1487,12 +1508,12 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 8px 0;
-    font-size: 0.9rem;
-    color: var(--bfc-body);
+    font-size: 1rem;
+    color: #454545;
 }
 
 .bfc-summary-total {
-    border-top: 1px solid var(--bfc-line);
+    border-top: 1px solid #BABABA;
     margin-top: 8px;
     padding-top: 16px;
     font-weight: 600;
@@ -1500,10 +1521,12 @@ a {
 }
 
 .bfc-summary-total .amt {
-    color: var(--bfc-orange);
-    font-size: 1.3rem;
+    color: #2F327D;
+    font-size: 1.2rem;
     font-weight: 700;
 }
+
+.footer-set-stdis {}
 
 /* terms */
 .bfc-terms {
@@ -1516,7 +1539,7 @@ a {
 .bfc-terms li {
     position: relative;
     padding: 0 0 14px 28px;
-    font-size: 0.88rem;
+    font-size: 1rem;
     color: var(--bfc-body);
     counter-increment: term;
 }
@@ -1533,7 +1556,7 @@ a {
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    font-size: 0.88rem;
+    font-size: 1rem;
     color: var(--bfc-ink);
     font-weight: 500;
 }
@@ -1587,7 +1610,7 @@ a {
     top: -10%;
     left: 0;
     opacity: 0.6;
-    z-index: 1;
+    z-index: -1;
     width: 100%;
     height: 100%;
     object-fit: fill;
@@ -2336,6 +2359,7 @@ a {
     flex: 0 0 135px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: top;
 }
 
 .bfc-testimonial-card h3 {
@@ -2702,6 +2726,10 @@ a {
     pointer-events: none;
 }
 
+.margin_bottom_minus11 {
+    margin-bottom: -100px;
+}
+
 @media (max-width: 1199.98px) {
     .bfc-faq-content {
         padding: 30px;
@@ -2746,6 +2774,10 @@ a {
         flex-basis: 26px;
         width: 26px;
         height: 26px;
+    }
+
+    .margin_bottom_minus11 {
+        margin-bottom: 10px !important;
     }
 }
 
@@ -2819,5 +2851,20 @@ a {
 
     .bfc-faq-image-wrap {
         min-height: 230px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .bfc-set-preview {
+        width: 100%;
+    }
+
+    .bfc-set-chips {
+        gap: 7px;
+    }
+
+    .bfc-set-chip {
+        font-size: 0.6rem;
     }
 }

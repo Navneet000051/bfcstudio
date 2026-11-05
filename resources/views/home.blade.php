@@ -13,9 +13,9 @@
 {{-- ===================== HERO (text left, full-bleed image slider right) ===================== --}}
 @php
     $heroSlides = [
-        ['img' => 'images/banner/banner1.webp',     'alt' => 'Podcast studio with two chairs, microphones, a table and a brick-wall backdrop'],
-        ['img' => 'images/banner/banner2.webp', 'alt' => 'Interview set with velvet curtains and modern chairs'],
-        ['img' => 'images/banner/banner3.webp',    'alt' => 'Wicker chairs framed by a wooden partition and art wall'],
+        ['img' => 'assets/images/banner/banner1.webp',     'alt' => 'Podcast studio with two chairs, microphones, a table and a brick-wall backdrop'],
+        ['img' => 'assets/images/banner/banner2.webp', 'alt' => 'Interview set with velvet curtains and modern chairs'],
+        ['img' => 'assets/images/banner/banner3.webp',    'alt' => 'Wicker chairs framed by a wooden partition and art wall'],
     ];
 @endphp
 <style>
@@ -24,7 +24,7 @@
 <section class="container-fluid ps-lg-4 bfc-hero position-relative" style="background: radial-gradient(483.9% 2719.65% at -49.5% -250%, rgba(218, 255, 222, 0) 29.24%, rgba(174, 211, 255, 0) 47.38%, rgba(201, 212, 239, 0) 54.97%, rgba(215, 152, 225, 0) 65.75%, rgba(202, 207, 250, 0) 81.77%) ;">
     <!-- <span class="bfc-blob bfc-blob-purple" style="top: 13%;left: 0px;"></span> -->
     <div class="row">
-        <img src="{{ asset('images/hero-banner-shadow.svg') }}" alt="Podcast studio with two chairs, microphones, a table and a brick-wall backdrop" class="bfc-hero-bg1212" aria-hidden="true">
+        <img src="{{ asset('assets/images/hero-banner-shadow.svg') }}" alt="Podcast studio with two chairs, microphones, a table and a brick-wall backdrop" class="bfc-hero-bg1212" aria-hidden="true">
         <div class="col-lg-6 order-lg-1 order-2">
             <div class="container-xxl px-md-4 px-xl-5 bfc-hero-inner">
                 <div class="bfc-hero-content">
@@ -82,7 +82,7 @@
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="bfc-stat bfc-stat--{{ $statThemes[$i] ?? 'camera' }}">
                         <span class="bfc-stat-icon" aria-hidden="true">
-                            <img src="{{ asset('images/icons/' . ($statIcons[$i] ?? 'camera-icon.svg')) }}" alt="">
+                            <img src="{{ asset('assets/images/icons/' . ($statIcons[$i] ?? 'camera-icon.svg')) }}" alt="">
                         </span>
                         <div class="bfc-stat-copy">
                             <span class="bfc-stat-value">{{ $stat['value'] }}</span>
@@ -178,7 +178,7 @@
                 @foreach (array_slice($facilities, 0, 5) as $f)
                     <div class="bfc-facility mb-3">
                         <span class="bfc-facility-icon" aria-hidden="true">
-                            <img src="{{ asset('images/studio-icons/' . ($facilityIcons[$f['title']] ?? 'other-icon.svg')) }}" alt="">
+                            <img src="{{ asset('assets/images/studio-icons/' . ($facilityIcons[$f['title']] ?? 'other-icon.svg')) }}" alt="{{ $f['title'] }}">
                         </span>
                         <div>
                             <h3 class="bfc-facility-title">{{ $f['title'] }}</h3>
@@ -191,13 +191,13 @@
             </div>
 
             <div class="col-lg-3 d-none d-lg-block bfc-facility-media">
-                <img src="{{ asset('images/studio-facilities.webp') }}" alt="Microphones and recording equipment at BFC Studio">
+                <img src="{{ asset('assets/images/studio-facilities.webp') }}" alt="Microphones and recording equipment at BFC Studio">
             </div>
 
             <div class="col-lg-4">
                 @foreach (array_slice($facilities, 5, 5) as $f)
                     <div class="bfc-facility mb-3">
-                        <span class="bfc-facility-icon" aria-hidden="true"><img src="{{ asset('images/studio-icons/' . ($facilityIcons[$f['title']] ?? 'other-icon.svg')) }}" alt=""></span>
+                        <span class="bfc-facility-icon" aria-hidden="true"><img src="{{ asset('assets/images/studio-icons/' . ($facilityIcons[$f['title']] ?? 'other-icon.svg')) }}" alt="{{ $f['title'] }}"></span>
                         <div>
                             <h3 class="bfc-facility-title">{{ $f['title'] }}</h3>
                             <p class="bfc-facility-desc">{{ $f['desc'] }}</p>
@@ -211,7 +211,9 @@
 </section>
 
 {{-- ===================== PLANS & PRICING ===================== --}}
-@include('partials.pricing', ['packages' => $packages])
+<div class="" style="background:#F8F8F8;">
+    @include('partials.pricing', ['packages' => $packages])
+</div>
 
 {{-- ===================== STUDIO RESERVATION CTA ===================== --}}
 <section class="studio-reserve-section" aria-labelledby="studio-reserve-title">
@@ -287,19 +289,25 @@
                         </div>
                     @endforeach
                 </div>
-                <a class="bfc-faq-read-more" href="{{ route('faq') }}">Read More...</a>
+                <div class="">
+                    <a class="bfc-faq-read-more" href="{{ route('faq') }}">Read More...</a>
+                </div>
             </div>
 
             <div class="bfc-faq-image-wrap">
-                <img class="bfc-faq-shadow" src="{{ asset('images/faq-shadow.png') }}" alt="" aria-hidden="true">
-                <img class="bfc-faq-image" src="{{ asset('images/faq.webp') }}" alt="A tablet displaying an FAQ message on a desk" loading="lazy">
+                <img class="bfc-faq-shadow" src="{{ asset('assets/images/faq-shadow.png') }}" alt="" aria-hidden="true">
+                <img class="bfc-faq-image" src="{{ asset('assets/images/faq.webp') }}" alt="A tablet displaying an FAQ message on a desk" loading="lazy">
             </div>
         </div>
 
-         <img class="left-right-icon" src="{{ asset('images/left-right-icon.svg') }}" alt="left-right-icon">
+         <img class="left-right-icon" src="{{ asset('assets/images/left-right-icon.svg') }}" alt="left-right-icon">
     </div>
 </section>
-
+ <style>
+        .bfc-footer {
+            padding: 80px 0px 0px 0px;
+        }
+    </style>
 @endsection
 
 @push('scripts')
