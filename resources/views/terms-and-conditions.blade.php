@@ -161,6 +161,7 @@
             padding-bottom: 8px;
         }
     </style>
+
     <div class="container-fluid bfc-privacy-policy pt-5 ">
         <span class="bfc-blob bfc-blob-purple" style="top: -38px; right: 8%;"></span>
         <div class="container">
@@ -200,4 +201,5 @@
 
         </div>
     </div>
+    
 @endsection

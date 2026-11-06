@@ -163,25 +163,25 @@ class PageController extends Controller
 
         $testimonials = [
             [
-                'name' => '– Anurag Agarwal',
+                'name' => 'Anurag Agarwal',
                 'image' => 'assets/images/testimonial/anurag-agarwal.webp',
                 'role' => 'Strategic Business Head',
                 'quote' => 'I shot a podcast at BFC Studio, and it was a really pleasant experience. The team was welcoming, the setup was great, and everything was well-organised. The entire process felt smooth and comfortable. Would definitely love to come back!',
             ],
             [
-                'name' => '– Dr Jitendra Singh',
+                'name' => 'Dr Jitendra Singh',
                 'image' => 'assets/images/testimonial/dr-jitendra-singh.webp',
                 'role' => 'General Physician',
                 'quote' => 'I was genuinely impressed with the final output of my recording at BFC Studio. The video quality, camera angles, lighting, and overall production were spot on. It\'s great to find a studio that pays attention to these little details!',
             ],
             [
-                'name' => '– Gaurav Prakash',
+                'name' => 'Gaurav Prakash',
                 'image' => 'assets/images/testimonial/gaurav-prakash.webp',
                 'role' => 'Partner, Universal Booksellers',
                 'quote' => 'I have recorded multiple times at BFC Studio, and every visit has been great. The variety of sets that they have is quite impressive. The team is always supportive and makes sure everything runs smoothly. It\'s become one of my preferred places to record!',
             ],
             [
-                'name' => '– Tanya Sahni',
+                'name' => 'Tanya Sahni',
                 'image' => 'assets/images/testimonial/tanya-sahni.webp',
                 'role' => 'Nutritionist',
                 'quote' => 'The podcast was seamlessly conducted, making the entire interaction and experience both engaging and enriching. Kudos to BFC Studio for creating such a welcoming and professional platform. Truly enjoyed being a part of it!',

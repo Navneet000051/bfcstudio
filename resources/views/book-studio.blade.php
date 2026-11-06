@@ -35,7 +35,8 @@
                         <div class="p-4">
                             <h2 class="bfc-card-title">Your Details</h2>
                             <div class="mb-3">
-                                <label class="bfc-field-label border-0" for="fullName"><i class="bi  bi-person-fill"></i> Full
+                                <label class="bfc-field-label border-0" for="fullName"><i class="bi  bi-person-fill"></i>
+                                    Full
                                     Name</label>
                                 <input class="bfc-input" type="text" id="fullName" name="full_name"
                                     placeholder="Enter Full Name" autocomplete="name">
@@ -49,7 +50,8 @@
                                         placeholder="Enter Email Address" autocomplete="email">
                                 </div>
                                 <div class="col-sm-6">
-                                    <label class="bfc-field-label border-0" for="phone"><i class="bi bi-telephone-fill"></i> Phone
+                                    <label class="bfc-field-label border-0" for="phone"><i class="bi bi-telephone-fill"></i>
+                                        Phone
                                         Number</label>
                                     <input class="bfc-input" type="tel" id="phone" name="phone"
                                         placeholder="Enter Phone Number" autocomplete="tel">
@@ -62,6 +64,8 @@
                     </div>
                 </div>
             </div>
+
+
 
             {{-- ===================== SELECT DAY + PICK SLOTS ===================== --}}
             <div class="row g-4 mb-5 mt-2">
@@ -164,19 +168,47 @@
                     </button>
 
                     <!-- @foreach ($sets as $i => $set)
-                                            <button type="button" class="bfc-set-chip @if($i === 0) active @endif" data-set-chip
-                                                data-set-image="{{ asset($set['image']) }}"
-                                                data-set-name="{{ $set['name'] }}">{{ $set['name'] }}</button>
-                                        @endforeach -->
+                                                <button type="button" class="bfc-set-chip @if($i === 0) active @endif" data-set-chip
+                                                    data-set-image="{{ asset($set['image']) }}"
+                                                    data-set-name="{{ $set['name'] }}">{{ $set['name'] }}</button>
+                                            @endforeach -->
                 </div>
                 <p class="mt-5" style="font-size:1.1rem;color:#1A1A1A; font-weight: 600;">Our team will get in touch to
                     understand your
                     requirements</p>
             </div>
         </div>
-        <div class="container">
+        <!-- <div class="container">
+            <hr>
+        </div> -->
+
+        {{-- ===================== NOTES ===================== --}}
+        <div class="container py-1">
+            <div class="bfc-card my-5 p-0">
+                <div class="row g-4 align-items-stretch p-0">
+                    <div class="col-md-6">
+                        <div class="p-4">
+                            <label class="bfc-card-title" for="notes"><i class="bi bi-journal-richtext"></i> Notes <small
+                                    style="font-weight:400;color:var(--bfc-muted)">(optional)</small></label>
+                            <textarea class="bfc-textarea" id="notes" name="notes" rows="4"
+                                placeholder="Share any specific requirements, doubts, or queries you may have."></textarea>
+                            <!-- <textarea class="bfc-textarea" id="notes" name="notes" rows="4"
+                                placeholder="Episode topic, guest count, anything we should prep…"></textarea> -->
+                            <div class="text-end mt-3">
+                                <button class="btn bfc-btn-primary" type="button"><i class="bi bi-send"></i> Send</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-none d-md-block bfc-details-media">
+                        <img src="{{ asset('assets/images/one-studio/sofa.webp') }}"
+                            alt="Yellow sofa studio set at BFC Studio">
+                    </div>
+                </div>
+            </div>
+
             <hr>
         </div>
+
         {{-- ===================== PLANS & PRICING ===================== --}}
         <div class="">
             @include('partials.pricing', ['packages' => $packages])
@@ -202,29 +234,7 @@
             <div class="container">
                 <hr>
             </div>
-            {{-- ===================== NOTES ===================== --}}
-            <div class="bfc-card my-5 p-0">
-                <div class="row g-4 align-items-stretch p-0">
-                    <div class="col-md-6">
-                        <div class="p-4">
-                            <label class="bfc-card-title" for="notes"><i class="bi bi-journal-richtext"></i> Notes <small
-                                    style="font-weight:400;color:var(--bfc-muted)">(optional)</small></label>
-                            <textarea class="bfc-textarea" id="notes" name="notes" rows="4"
-                                placeholder="Episode topic, guest count, anything we should prep…"></textarea>
-                            <div class="text-end mt-3">
-                                <button class="btn bfc-btn-primary" type="button"><i class="bi bi-send"></i> Send</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-none d-md-block bfc-details-media">
-                        <img src="{{ asset('assets/images/one-studio/sofa.webp') }}"
-                            alt="Yellow sofa studio set at BFC Studio">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <hr>
-            </div>
+
             {{-- ===================== TERMS & CONDITIONS ===================== --}}
             <div class="text-center my-5" id="TermsConditions">
                 <h2 class="bfc-heading">Terms &amp; <span class="accent">Conditions</span></h2>

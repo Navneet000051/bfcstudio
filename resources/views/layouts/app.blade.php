@@ -110,9 +110,8 @@
                 <span class="bfc-logo-text">BFC Studio</span> -->
                                 <img src="{{ asset('assets/images/logo.svg') }}" alt="BFC Studio Logo" class="bfc-logo">
                             </a>
-                            <p class="bfc-footer-about">
-                                BFC Studio is a platform that provides information about various shows,
-                                including their schedules, cast, and other details.
+                            <p class="bfc-footer-about" style="max-width:100%">
+                                BFC Studio is a professional recording space in Lucknow, built for creators, storytellers, and ideas worth bringing to life. From podcast recordings to content creation and live sessions, it's a space where creativity comes together.
                             </p>
                         </div>
 
@@ -151,7 +150,7 @@
                     </div>
 
                     <div class="bfc-footer-bar">
-                        <p class="mb-0">Copyright &copy; {{ date('Y') }}. All Rights Reserved By <span>BFC Studio</span>
+                        <p class="mb-0">Copyright &copy; {{ date('Y') }}. All Rights Reserved By <span> <a href="{{ route('book-studio') }}">BFC Studio</a></span>
                         </p>
                         <div class="bfc-social">
                             <a href="https://www.facebook.com/profile.php?id=61593612510752" aria-label="Facebook"
@@ -159,10 +158,10 @@
                             <a href="https://www.instagram.com/bfcstudio_/?hl=en" aria-label="Instagram"
                                 target="_blank"><i class="bi bi-instagram"></i></a>
                             <!-- <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a> -->
-                            <a href="https://x.com/BasicFundeclear" aria-label="X" target="_blank"> <i
+                            <!-- <a href="" aria-label="X" target="_blank"> <i
                                     class="bi bi-twitter-x"></i></a>
-                            <a href="https://www.youtube.com/channel/UCggVVI7G6ADJTbZjf_W6aNA" aria-label="YouTube"
-                                target="_blank"><i class="bi bi-youtube"></i></a>
+                            <a href="" aria-label="YouTube"
+                                target="_blank"><i class="bi bi-youtube"></i></a> -->
                         </div>
                     </div>
                 </div>

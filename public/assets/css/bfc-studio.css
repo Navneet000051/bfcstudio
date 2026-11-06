@@ -56,7 +56,7 @@ a {
 }
 
 .bfc-section {
-    padding: 72px 0;
+    padding: 100px 0;
     position: relative;
 }
 
@@ -189,8 +189,8 @@ a {
 }
 
 .header-icon-btn-shadow17 {
-    border: 1px solid #e9650d ;
-    color: #e9650d ;
+    border: 1px solid #e9650d;
+    color: #e9650d;
 }
 
 /* .right-shadow-set2026{
@@ -560,7 +560,7 @@ a {
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    padding: 60px 30px;
+    padding: 80px 30px;
     background: #f8f8f8;
     font-family: 'Open Sans', sans-serif;
 }

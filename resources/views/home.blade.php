@@ -119,7 +119,7 @@
                         <div class="bfc-vibes-card-content">
                             <h3 class="bfc-vibes-card-title">{{ $set['name'] }}</h3>
                             <p class="bfc-vibes-card-description">{{ $set['desc'] }}</p>
-                            @if ($i !== 0)
+                            @if ($i !== 0 && $i != 11)
                                 <a class="bfc-vibes-book" href="{{ route('book-studio') }}">Book this set <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
                             @else
                                 <span class="bfc-vibes-book bfc-vibes-book--empty" aria-hidden="true"></span>
